@@ -1,8 +1,42 @@
-.DS_Store
-Thumbs.db
-db.json
-*.log
+# Node.js 相依檔案
 node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Hexo 部署產生物件
+db.json
 public/
 .deploy*/
+.deploy_git/
+
+# 作業系統產生暫存檔
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE/編輯器設定檔
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 個人密鑰、設定與其他敏感資料
+*.pem
+*.key
+*.crt
+*.env
+.env.*
+_config.*.yml     # 如自訂機密設定可加強控管
 _multiconfig.yml
+
+# 部署/第三方服務設定檔（建議讓 deploy_key, Netlify Token 類型檔案排除）
+netlify.toml.*    # 若有包含認證資訊才排除
+.deploy_key
+*.secret
+*.token
+
+# 部落格私有草稿（如有）
+drafts/
+
